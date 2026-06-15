@@ -11,6 +11,10 @@ h2 {
   color: rgba(0, 0, 0, 0.85);
 }
 
+li {
+  list-style: none;
+}
+
 .app {
   display: flex;
   align-items: center;
