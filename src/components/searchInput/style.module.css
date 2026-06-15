@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+}
+
+.inputContainer {
+  width: 920px;
+  height: 105px;
+  background-color: #fff;
+}
+
+.btn {
+  background-color: #274059;
+  color: #fff;
+  padding: 40px 70px;
+  border: none;
+  cursor: pointer;
+}
