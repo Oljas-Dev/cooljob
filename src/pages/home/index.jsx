@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import Header from "../../components/header";
 import Main from "../../components/main";
 import CompaniesCardList from "../../components/companiesCardList";
-// import CategoryCardList from "../../components/categoryCardList";
+import CategoryCardList from "../../components/categoryCardList";
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
       <Header />
       <Main />
       <CompaniesCardList />
-      {/* <CategoryCardList /> */}
+      <CategoryCardList />
     </div>
   );
 }

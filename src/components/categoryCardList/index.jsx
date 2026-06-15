@@ -1,60 +1,73 @@
 import styles from "./styles.module.css";
+
+// icons
+import finance from "./../../assets/icons/finance.svg";
+import cargoCar from "./../../assets/icons/cargoCar.svg";
+import design from "./../../assets/icons/design.svg";
+import utensils from "./../../assets/icons/utensils.svg";
+import medicine from "./../../assets/icons/medicine.svg";
+import media from "./../../assets/icons/media.svg";
+import support from "./../../assets/icons/support.svg";
+import management from "./../../assets/icons/management.svg";
+import cart from "./../../assets/icons/cart.svg";
+// import arrow from "./../../assets/icons/arrow.svg";
+
 const categoryCardList = [
   {
     id: Math.random(),
     title: "Финансы",
-    //icon: // icon,
+    icon: finance,
   },
   {
     id: Math.random(),
     title: "Грузоперевозки",
-    // icon: // icon
+    icon: cargoCar,
   },
   {
     id: Math.random(),
     title: "Дизайн",
-    // icon: // icon
+    icon: design,
   },
   {
     id: Math.random(),
     title: "Ресторанный бизнес",
-    // icon: // icon
+    icon: utensils,
   },
   {
     id: Math.random(),
     title: "Медицина",
-    // icon: // icon
+    icon: medicine,
   },
   {
     id: Math.random(),
     title: "Мультимедиа",
-    // icon: // icon
+    icon: media,
   },
   {
     id: Math.random(),
     title: "Служба поддержки",
-    // icon: // icon
+    icon: support,
   },
   {
     id: Math.random(),
     title: "Менеджмент",
-    // icon: // icon
+    icon: management,
   },
   {
     id: Math.random(),
     title: "Продажи",
-    // icon: // icon
+    icon: cart,
   },
 ];
 function CategoryCardList() {
   return (
-    <div>
+    <div className={styles.container}>
       <h2>Работа по категориям</h2>
       <ul>
         {categoryCardList.map((card) => {
           return (
             <li key={card.id}>
-              <img src="art" alt="icon" />
+              <img src={card.icon} alt="icon" />
               <h4>{card.title}</h4>
             </li>
           );
