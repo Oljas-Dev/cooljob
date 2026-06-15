@@ -10,7 +10,8 @@ import media from "./../../assets/icons/media.svg";
 import support from "./../../assets/icons/support.svg";
 import management from "./../../assets/icons/management.svg";
 import cart from "./../../assets/icons/cart.svg";
-// import arrow from "./../../assets/icons/arrow.svg";
+import CategoryCard from "../categoryCard";
+import arrow from "./../../assets/icons/arrow.svg";
 
 const categoryCardList = [
   {
@@ -58,19 +59,21 @@ const categoryCardList = [
     title: "Продажи",
     icon: cart,
   },
+  {
+    id: Math.random(),
+    title: "Больше категорий",
+    icon: arrow,
+  },
 ];
 function CategoryCardList() {
   return (
     <div className={styles.container}>
-      <h2>Работа по категориям</h2>
+      <h2>
+        Работа <br /> по категориям
+      </h2>
       <ul>
         {categoryCardList.map((card) => {
-          return (
-            <li key={card.id}>
-              <img src={card.icon} alt="icon" />
-              <h4>{card.title}</h4>
-            </li>
-          );
+          return <CategoryCard key={card.id} card={card} />;
         })}
       </ul>
     </div>

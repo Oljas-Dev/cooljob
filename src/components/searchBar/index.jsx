@@ -4,10 +4,10 @@ import style from "./style.module.css";
 function SearchBar() {
   return (
     <section className={style.container}>
-      <h2>
+      <h1>
         Один клик
         <br /> и работа в кармане
-      </h2>
+      </h1>
       <SearchInput />
     </section>
   );

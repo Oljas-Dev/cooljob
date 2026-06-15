@@ -5,9 +5,15 @@
   font-family: sans-serif;
 }
 
-h2 {
+h1 {
   font-weight: 700;
   font-size: 64px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
   color: rgba(0, 0, 0, 0.85);
 }
 
