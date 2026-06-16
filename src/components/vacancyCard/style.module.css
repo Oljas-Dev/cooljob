@@ -1,0 +1,22 @@
+.container {
+  background-color: #fff;
+  width: 450px;
+  height: 350px;
+  padding: 43px 46px;
+}
+
+.container p {
+  color: #8d8d8d;
+}
+
+.categoryContainer {
+  display: flex;
+  gap: 17px;
+}
+
+.dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}

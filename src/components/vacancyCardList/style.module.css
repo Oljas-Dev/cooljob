@@ -1,0 +1,11 @@
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ulList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}

@@ -1,14 +1,4 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 53px;
-  width: 100%;
-  background-color: #e4f2ff;
-
-  padding: 107px 100px;
-}
-
-.container ul {
+.ulList {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px 0;

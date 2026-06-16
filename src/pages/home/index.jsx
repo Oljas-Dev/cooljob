@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Main from "../../components/main";
 import CompaniesCardList from "../../components/companiesCardList";
 import CategoryCardList from "../../components/categoryCardList";
+import VacancyCardList from "../../components/vacancyCardList";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Main />
       <CompaniesCardList />
       <CategoryCardList />
+      <VacancyCardList />
     </div>
   );
 }

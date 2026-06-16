@@ -12,6 +12,7 @@ import management from "./../../assets/icons/management.svg";
 import cart from "./../../assets/icons/cart.svg";
 import CategoryCard from "../categoryCard";
 import arrow from "./../../assets/icons/arrow.svg";
+import FlexSection from "../flexSection";
 
 const categoryCardList = [
   {
@@ -67,16 +68,16 @@ const categoryCardList = [
 ];
 function CategoryCardList() {
   return (
-    <div className={styles.container}>
+    <FlexSection>
       <h2>
         Работа <br /> по категориям
       </h2>
-      <ul>
+      <ul className={styles.ulList}>
         {categoryCardList.map((card) => {
           return <CategoryCard key={card.id} card={card} />;
         })}
       </ul>
-    </div>
+    </FlexSection>
   );
 }
 export default CategoryCardList;
