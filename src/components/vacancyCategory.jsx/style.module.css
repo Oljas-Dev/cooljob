@@ -1,0 +1,11 @@
+.categoryContainer {
+  display: flex;
+  gap: 17px;
+}
+
+.dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}

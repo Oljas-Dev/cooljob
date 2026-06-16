@@ -8,6 +8,7 @@ import sony from "./../../assets/icons/vacancies/sony.svg";
 import facebook from "./../../assets/icons/vacancies/facebook.svg";
 import coca from "./../../assets/icons/vacancies/coca.svg";
 import locationIcon from "./../../assets/icons/vacancies/locationIcon.svg";
+import Button from "../button";
 
 function VacancyCardList() {
   const vacancies = [
@@ -73,17 +74,22 @@ function VacancyCardList() {
     },
   ];
   return (
-    <FlexSection>
-      <div className={styles.headingContainer}>
-        <h2>Новые вакансии</h2>
-        <SecondaryText text="Найди работу своей мечты прямо сейчас" />
-      </div>
-      <ul className={styles.ulList}>
-        {vacancies.map((vacancy) => {
-          return <VacancyCard card={vacancy} />;
-        })}
-      </ul>
-    </FlexSection>
+    <>
+      <FlexSection>
+        <div className={styles.headingContainer}>
+          <h2>Новые вакансии</h2>
+          <SecondaryText text="Найди работу своей мечты прямо сейчас" />
+        </div>
+        <ul className={styles.ulList}>
+          {vacancies.map((vacancy) => {
+            return <VacancyCard card={vacancy} />;
+          })}
+        </ul>
+        <div className={styles.btnContainer}>
+          <Button btnText="Все вакансии" newStyles="" />
+        </div>
+      </FlexSection>
+    </>
   );
 }
 

@@ -11,14 +11,14 @@
   box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.15);
   text-decoration: none;
   color: rgba(0, 0, 0, 0.85);
-  transition: transform 0.2s ease;
+  transition: transform box-shadow 0.2s ease;
 }
 
 .container a:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 .container a:active {
-  transform: scale(0.98);
+  transform: scale(1);
   box-shadow: none;
 }
 

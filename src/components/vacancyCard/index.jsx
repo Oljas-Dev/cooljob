@@ -1,25 +1,20 @@
 import styles from "./style.module.css";
+import VacancyCategory from "../vacancyCategory.jsx/index.jsx";
+import VacancyTitle from "../vacancyTitle/index.jsx";
+import VacancyRow from "../vacancyRow/index.jsx";
 
 function VacancyCard({ card }) {
   return (
     <li className={styles.container}>
-      <div className={styles.categoryContainer}>
-        <span
-          className={styles.dot}
-          style={{ backgroundColor: card.color }}
-        ></span>
-        <p>{card.section}</p>
-      </div>
-      <h4>{card.title}</h4>
-      <span>
-        <img src={card.locationIcon} alt="location icon" />
-        <p>{card.location}</p>
-      </span>
+      <VacancyCategory card={card} />
 
-      <span>
-        <img src={card.companyIcon} alt={`${card.companyName}-icon`} />
-        <p>{card.lastSeen}</p>
-      </span>
+      <VacancyTitle card={card} />
+
+      <VacancyRow
+        src={card.companyIcon}
+        alt={`${card.companyName}-icon`}
+        text={card.lastSeen}
+      />
     </li>
   );
 }
