@@ -7,7 +7,9 @@ import cooljobIcon from "./../../assets/icons/footer/cooljob.svg";
 function Links() {
   return (
     <div className={styles.container}>
-      <img src={cooljobIcon} alt="cooljob icon" />
+      <a href="#">
+        <img src={cooljobIcon} alt="cooljob icon" />
+      </a>
 
       <SocailLinks />
     </div>

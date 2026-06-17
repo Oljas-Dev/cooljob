@@ -9,4 +9,14 @@
   font-size: 20px;
   text-align: center;
   color: #fff;
+  transition: transform 0.1s ease-in;
+}
+.btn:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: scale(1);
+  box-shadow: none;
 }

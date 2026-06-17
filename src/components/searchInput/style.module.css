@@ -3,7 +3,47 @@
 }
 
 .inputContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
   width: 920px;
   height: 105px;
   background-color: #fff;
+  box-shadow: 6px 5px 9px 0 rgba(0, 0, 0, 0.35);
+}
+
+.inputLeft,
+.inputRight {
+  position: relative;
+  width: 50%;
+}
+
+.inputLeft input,
+.inputRight input {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  width: 100%;
+  padding-left: 80px;
+  border: none;
+  outline: none;
+}
+
+.inputLeft input::placeholder,
+.inputRight input::placeholder {
+  color: #000;
+}
+
+.inputLeft input {
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.inputLeft button,
+.inputRight button {
+  background-color: transparent;
+  border: none;
+
+  position: absolute;
+  left: 30px;
+  top: -4px;
 }

@@ -2,4 +2,9 @@
   font-weight: 600;
   font-size: 22px;
   color: #d0e8ff;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #fff;
 }

@@ -9,10 +9,18 @@ import twitterIcon from "./../../assets/icons/footer/twitter.svg";
 function SocailLinks() {
   return (
     <div className={styles.container}>
-      <img src={facebookIcon} alt="facebook icon" />
-      <img src={googleIcon} alt="google icon" />
-      <img src={linkedinIcon} alt="linkedIn icon" />
-      <img src={twitterIcon} alt="twitter icon" />
+      <a href="#">
+        <img src={facebookIcon} alt="facebook icon" />
+      </a>
+      <a href="#">
+        <img src={googleIcon} alt="google icon" />
+      </a>
+      <a href="#">
+        <img src={linkedinIcon} alt="linkedIn icon" />
+      </a>
+      <a href="#">
+        <img src={twitterIcon} alt="twitter icon" />
+      </a>
     </div>
   );
 }
