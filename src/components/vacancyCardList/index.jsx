@@ -13,6 +13,7 @@ import Button from "../button";
 function VacancyCardList() {
   const vacancies = [
     {
+      id: crypto.randomUUID(),
       section: "Финансы",
       title: "Менеджер по управлению финансами в крупной компании",
       location: "Осака, Япония",
@@ -23,6 +24,7 @@ function VacancyCardList() {
       color: "#5182FF",
     },
     {
+      id: crypto.randomUUID(),
       section: "Продажи",
       title: "Специалист по продажам",
       location: "Коясан, Япония",
@@ -33,6 +35,7 @@ function VacancyCardList() {
       color: "#FF51EE",
     },
     {
+      id: crypto.randomUUID(),
       section: "Служба поддержки",
       title: "Оператор колл центра",
       location: "Томаму, Япония",
@@ -43,6 +46,7 @@ function VacancyCardList() {
       color: "#58D94D",
     },
     {
+      id: crypto.randomUUID(),
       section: "Мультимедиа",
       title: "Системный администратор",
       location: "Токио, Япония",
@@ -53,6 +57,7 @@ function VacancyCardList() {
       color: "#FF9051",
     },
     {
+      id: crypto.randomUUID(),
       section: "Дизайн",
       title: "Дизайнер интерьера в профессиональную студию в центре города",
       location: "Йокогама, Япония",
@@ -63,6 +68,7 @@ function VacancyCardList() {
       color: "#F84242",
     },
     {
+      id: crypto.randomUUID(),
       section: "Грузоперевозки",
       title: "Водитель на дальние дистанции",
       location: "Кобе, Япония",
@@ -82,7 +88,7 @@ function VacancyCardList() {
         </div>
         <ul className={styles.ulList}>
           {vacancies.map((vacancy) => {
-            return <VacancyCard card={vacancy} />;
+            return <VacancyCard card={vacancy} key={vacancy.id} />;
           })}
         </ul>
         <div className={styles.btnContainer}>

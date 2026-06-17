@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.container h4 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+
+.container ul {
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 2px solid #465461; */
+}
+
+.container hr {
+  border: none;
+  height: 2px;
+  background-color: #465461;
+}

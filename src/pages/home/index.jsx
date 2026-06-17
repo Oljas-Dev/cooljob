@@ -4,6 +4,7 @@ import Main from "../../components/main";
 import CompaniesCardList from "../../components/companiesCardList";
 import CategoryCardList from "../../components/categoryCardList";
 import VacancyCardList from "../../components/vacancyCardList";
+import Footer from "../../components/footer";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <CompaniesCardList />
       <CategoryCardList />
       <VacancyCardList />
+      <Footer />
     </div>
   );
 }
